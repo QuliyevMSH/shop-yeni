@@ -1,0 +1,106 @@
+.inp {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .ctn {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+
+        .name {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 5px;
+
+            input {
+                width: 40%;
+                padding: 10px;
+                border: 1px solid black;
+                outline: none;
+                border-radius: 30px;
+            }
+
+            h1 {
+                span {
+                    color: red;
+                }
+            }
+        }
+
+        .surname {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 5px;
+
+            input {
+                width: 40%;
+                padding: 10px;
+                border: 1px solid black;
+                outline: none;
+                border-radius: 30px;
+            }
+
+            h1 {
+                span {
+                    color: red;
+                }
+            }
+        }
+
+        .btn {
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+            button {
+                width: 20%;
+                padding: 10px;
+                background-color: black;
+                color: white;
+                border: none;
+                border-radius: 20px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: red;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:0) and (max-width:990px) {
+    .inp{
+      .ctn{
+          width: 90%;
+          .name{
+              input{
+                  width: 90%;
+              }
+          }
+          .surname{
+              input{
+                  width: 90%;
+              }
+          }
+          .btn{
+              button{
+                  width: 60%;
+              }
+          }
+      }
+    }
+  }
